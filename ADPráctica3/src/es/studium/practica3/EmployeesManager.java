@@ -73,7 +73,7 @@ public class EmployeesManager {
 		System.out.println("Introduzca el día de contratación");
 		int diaC=sc.nextInt();
 		
-		Employees ep = new Employees(id, new GregorianCalendar(annoN,mesN,diaN).getTime(), nombre, apellidos, genero, new GregorianCalendar(annoC,mesC,diaC).getTime()); 
+		Employees ep = new Employees(id, new GregorianCalendar(annoN,mesN -1,diaN).getTime(), nombre, apellidos, genero, new GregorianCalendar(annoC,mesC-1,diaC).getTime()); 
 		EmployeesManager.create(ep);
 
 	}
